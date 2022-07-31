@@ -95,8 +95,7 @@ export class ExtensionProvider {
     return this.initialized;
   }
 
-  // TODO: In V3, this will not be an async function anymore.
-  async isConnected(): Promise<boolean> {
+  isConnected(): boolean {
     return Boolean(this.account.address);
   }
 
